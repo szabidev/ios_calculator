@@ -1,0 +1,112 @@
+/* BASE */
+:root {
+  --top-operand: #d4d4d2;
+  --background: #000;
+  --numbers: #505050;
+  --right-operand: #ff9500;
+  --white: #edf2f4;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* CONTAINER */
+.container {
+  width: 17%;
+  margin: 10% auto;
+  border: 1px solid var(--white);
+  background-color: var(--background);
+  font-size: 2.5rem;
+  color: var(--white);
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+img.status {
+  width: 80px;
+}
+
+.line {
+  display: block;
+  width: 35%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  margin-left: -17.25%;
+}
+
+/* CALCULATOR */
+.display {
+  width: 100%;
+  font-size: 4.5rem;
+  text-align: right;
+  padding: 1.25rem 0.75rem;
+}
+
+.calculator-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  justify-content: center;
+}
+
+.calculator-grid span {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  justify-self: center;
+  margin: 0.5rem 0;
+  text-align: center;
+  line-height: 6rem;
+  cursor: pointer;
+}
+
+.calculator-grid span:nth-child(8) {
+  line-height: 5.7rem;
+}
+
+.calculator-grid span:nth-child(12) {
+  font-size: 5rem;
+}
+
+.span-two {
+  grid-column: 1 / span 2;
+  width: 13rem !important;
+  border-radius: 50px !important;
+  text-align: left !important;
+  padding-left: 2.25rem;
+}
+
+/* OPERANDS */
+.grey {
+  background-color: var(--top-operand);
+  color: var(--background);
+}
+
+.orange {
+  background-color: var(--right-operand);
+}
+
+.numbers {
+  background-color: var(--numbers);
+}
