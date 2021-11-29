@@ -22,7 +22,7 @@ html {
 
 /* CONTAINER */
 .container {
-  width: 17%;
+  width: 22%;
   margin: 10% auto;
   border: 1px solid var(--white);
   background-color: var(--background);
@@ -36,7 +36,7 @@ html {
   display: flex;
   justify-content: space-between;
   font-size: 1.25rem;
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
 }
 
 img.status {
@@ -87,6 +87,10 @@ img.status {
 
 .calculator-grid span:nth-child(12) {
   font-size: 5rem;
+}
+
+.calculator-grid span:nth-child(4) {
+  font-size: 3rem;
 }
 
 .span-two {
